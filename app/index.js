@@ -65,6 +65,8 @@ export default class App extends Component {
               label: 'Home',
               screen: 'Tab1Screen',
               title: 'Hey',
+              icon: require('./images/icon1.png'), // local image asset for the tab icon unselected state (optional on iOS)
+              selectedIcon: require('./images/icon1_selected.png'), // local image asset for the tab icon selected state (optional, iOS only. On Android, Use `tabBarSelectedButtonColor` instead)
               overrideBackPress: false,
               navigatorStyle: {}
             },
@@ -72,7 +74,8 @@ export default class App extends Component {
             {
               label: 'Search',
               screen: 'Tab2Screen',
-
+              icon: require('./images/icon2.png'), // local image asset for the tab icon unselected state (optional on iOS)
+              selectedIcon: require('./images/icon2_selected.png'), // local image asset for the tab icon selected state (optional, iOS only. On Android, Use `tabBarSelectedButtonColor` instead)
               title: 'Hey',
               navigatorStyle: {}
             }
